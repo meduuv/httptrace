@@ -1,0 +1,12 @@
+[build-system]
+requires=["setuptools>=69"]
+build-backend="setuptools.build_meta"
+[project]
+name="httptrace"
+version="0.1.0"
+description="HTTP diagnostics CLI"
+requires-python=">=3.10"
+[project.scripts]
+httptrace="httptrace.cli:main"
+[tool.setuptools.packages.find]
+where=["src"]
